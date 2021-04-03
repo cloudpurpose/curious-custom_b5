@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="title" content="Curious Custom B5 | Enrollment Management | Georgia Tech">
-    <meta name="description" content="Themed page with Bootstrap 5 imitating GT Curie theme.">
+    <meta name="description" content="Themed page imitating GT Curie theme with Bootstrap 5. (No JQuery)">
     <meta name="keywords" content="Georgia Tech, gatech">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
@@ -24,179 +25,773 @@
     <meta name="ICBM" content="33.772337, -84.394711" />
     <title>Curious Custom B5 | Enrollment Management | Georgia Tech</title>
     <!--<link rel="canonical" href="canonical link goes here">-->
-    <!-- Bootswatch CSS CDN Cosmo Theme -->
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-uhut8PejFZO8994oEgm/ZfAv0mW1/b83nczZzSwElbeILxwkN491YQXsCFTE6+nx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <!-- Font Awesome 5 CDN -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- Google Fonts Roboto -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <!-- Google Fonts Roboto Condensed -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <!-- Google Fonts Abel -->
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <!-- Google Fonts: Abel, Roboto, Roboto Condensed -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Site CSS -->
-    <link rel="stylesheet" href="css/screen.css" media="screen">
-    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="stylesheet" href="../_assets/css/scroll.css" media="all">
+    <link rel="stylesheet" href="../_assets/css/screen.css" media="screen">
+    <link rel="stylesheet" href="../_assets/css/print.css" media="print">
+    <style>
+        .banner-image {
+            background-image: url("https://registrar.gatech.edu/files/air_1920x400.png");
+        }
+    </style>
 </head>
-<body>
-    <!-- HEADERS/NAVBARS -->
-    <header role="banner">
-        <nav id="header-1" class="navbar-expand-md navbar-light d-none d-md-block">
-            <!-- start GT -->
-            <div id="top-header" class="top-background-wrapper">
-                <div class="container">
-                    <div class="row stripes justify-content-between">
-                        
-                        <div class="col-5 col-sm-4 col-md-3 p-0 d-flex flex-row top-angle-wrapper">
-                            <div class="top-background"></div>
-                            <div class="top-background-angle"></div>
-                        </div>
 
-                        <div class="col p-0 d-flex flex-row ctn-background">
-                            <div class="ctn-angle d-none d-md-block"></div>
-                            <!--  CTN Logo -->
-                            <div class="ctn ctn-logo d-none d-md-block">
-                                <img src="images/creating_the_next_gold.svg" style="max-height:1rem" alt="Creating the Next">
-                            </div>
-                        </div>
-
+<body id="top">
+    <!-- Header -->
+    <header>
+        <!-- Topper -->
+        <div class="container-fluid bg-warning topper">
+            <div class="container">
+                <div class="row justify-content-md-center pt-2 pb-2">
+                    <div class="col-md-auto">
+                        <p class="mb-0"><a class="text-dark font-weight-bold" href="https://health.gatech.edu/tech-moving-forward#utm_source=registrar&utm_medium=banner" target="_blank">Get the latest Covid-19 health information, operational status updates, and campus guidelines.</a></p>
                     </div>
                 </div>
             </div>
-            <div id="middle-header" class="middle-background-wrapper">
+        </div>
+        <!-- /.topper -->
+
+        <!-- Full Header -->
+        <nav class="navbar-expand-md navbar-light d-none d-md-block full-header">
+            <div class="topmost">
                 <div class="container">
-                    <div class="row middle-background">
-                        <!--  GT Logo -->
-                        <div class="col-5 col-sm-4 col-md-3 p-0 d-flex flex-row gt-logo-wrapper">
+                    <div class="row justify-content-between stripes">
+                        <div class="col-5 col-sm-4 col-md-3 p-0 d-flex flex-row inner">
+                            <div class="wedge-background"></div>
+                            <div class="wedge-angle"></div>
+                        </div>
+                        <div class="col p-0 d-flex flex-row ctn">
+                            <div class="d-none d-md-block ctn-angle"></div>
+                            <div class="d-none d-md-block ctn-logo">
+                                <img src="../_assets/img/logos/creating_the_next_gold.svg" style="max-height: 1rem" alt="Creating the Next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="container">
+                    <div class="row inner">
+                        <!--  Logo -->
+                        <div class="col-5 col-sm-4 col-md-3 p-0 d-flex flex-row gt">
                             <div class="gt-logo">
                                 <a href="http://www.gatech.edu" title="Georgia Institute of Technology">
-                                    <img src="images/gt-logo.svg" alt="Georgia Institute of Technology">
+                                    <img src="../_assets/img/logos/gt-logo.svg" alt="Georgia Institute of Technology">
                                 </a>
                             </div>
-                            <div class="gt-logo-angle"></div>
+                            <div class="gt-angle"></div>
                         </div>
-                        <!--  GT Hambuger -->
+                        <!--  Hambuger -->
                         <div class="col-2 order-md-1 ml-auto">
                             <!-- no button here -->
                         </div>
-                        <!--  GT Site Name/Site Title -->
-                        <div class="col-12 col-md-9 p-0 d-sm-block d-md-flex align-items-center middle-header">
-                            <div class="site-title-multiple">
-                                <h2 class="site-name one-line" rel="home">
-                                    <a id="edition" href="https://em.gatech.edu">Enrollment Management</a>
-                                </h2>
-                            </div>
+                        <!--  Site Name -->
+                        <div class="col-12 col-md-9 p-0 d-sm-block d-md-flex align-items-center">
+                            <h2 class="site-name" rel="home">
+                                <a href="https://em.gatech.edu">Enrollment Management</a>
+                            </h2>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end GT -->
         </nav>
-        <nav id="header-2" class="navbar navbar-expand-md navbar-light d-md-none">
+        <!-- /.full-header -->
+
+        <!-- Mobile Header -->
+        <nav class="navbar navbar-expand-md navbar-light d-md-none mobile-header">
             <div class="container">
-                <a class="navbar-brand gt-logo-mobile" href="http://catalog.gatech.edu" title="Georgia Institute of Technology">
-                    <img src="images/gt-logo.svg" alt="Georgia Institute of Technology">
+                <a class="navbar-brand gt-logo" href="http://www.gatech.edu" title="Georgia Institute of Technology">
+                    <img src="../_assets/img/logos/gt-logo.svg" alt="Georgia Institute of Technology">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-links" aria-controls="main-links" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
         </nav>
+        <!-- /.mobile-header -->
+
+        <!-- Mobile Title -->
+        <div class="container-fluid d-md-none mobile-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 p-0 pt-3 pb-3">
+                        <h2 class="site-name mb-0" rel="home">
+                            <a href="https://em.gatech.edu">Enrollment Management</a>
+                        </h2> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Persistent Nav -->
+        <div id="main-nav" class="container-fluid persistent-nav collapse">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-9 wrapper wrapper-left">
+                        <div class="py-1">
+                            <nav id="left-nav" class="nav nav-left d-flex justify-content-start">
+                                <!-- About Us -->
+                                <div class="btn-group">
+                                    <a class="p-2 nav-link dropdown-toggle" href="about" id="about-us-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">About Us</a>
+                                    <div class="dropdown-menu" aria-labelledby="about-us-dropdown">
+                                        <a class="dropdown-item first" href="#">About Us</a>
+                                        <a class="dropdown-item" href="#">Contact Us</a>
+                                        <a class="dropdown-item" href="#">Staff List</a>
+                                        <a class="dropdown-item" href="#">Our Mission</a>
+                                        <a class="dropdown-item" href="#">Our Vision</a>
+                                        <a class="dropdown-item last" href="#">Acceptable Use Policy</a>
+                                    </div>
+                                </div>
+                                <!-- Sections -->
+                                <div class="btn-group">
+                                    <a class="p-2 nav-link dropdown-toggle" href="#" id="sections-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">Sections</a>
+                                    <div class="dropdown-menu" aria-labelledby="sections-dropdown">
+                                        <a class="dropdown-item first" href="#">Current Students</a>
+                                        <a class="dropdown-item" href="#">Prospective Students</a>
+                                        <a class="dropdown-item" href="#">Faculty and Staff</a>
+                                        <a class="dropdown-item" href="#">Alumni and Former Students</a>
+                                        <a class="dropdown-item" href="#">Parents and Family</a>
+                                        <a class="dropdown-item last" href="#">Veterans Services</a>
+                                    </div>
+                                </div>
+                                <!-- Services -->
+                                <div class="btn-group">
+                                    <a class="p-2 nav-link dropdown-toggle" href="#" id="services-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">Services</a>
+                                    <div class="dropdown-menu" aria-labelledby="services-dropdown">
+                                        <a class="dropdown-item first" href="#">Registration</a>
+                                        <a class="dropdown-item" href="#">Records</a>
+                                        <a class="dropdown-item" href="#">Academic Scheduling</a>
+                                        <a class="dropdown-item" href="#">FERPA</a>
+                                        <a class="dropdown-item last" href="#">EU GDPR</a>
+                                    </div>
+                                </div>
+                                <!-- Calendars -->
+                                <div class="btn-group">
+                                    <a class="p-2 nav-link dropdown-toggle" href="#" id="calendars-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">Calendars</a>
+                                    <div class="dropdown-menu" aria-labelledby="calendars-dropdown">
+                                        <a class="dropdown-item first" href="#">Academic Calendar</a>
+                                        <a class="dropdown-item" href="#">Past Academic Calendars</a>
+                                        <a class="dropdown-item" href="#">Tentative Five-Term Institute Calendar</a>
+                                        <a class="dropdown-item last" href="#">Final Exam Matrices</a>
+                                    </div>
+                                </div>
+                                <!-- Catalog -->
+                                <div class="btn-group">
+                                    <a class="p-2 nav-link" href="#">Catalog</a>
+                                </div>
+                                <!-- Forms -->
+                                <div class="btn-group">
+                                    <a class="p-2 nav-link" href="#">Forms</a>
+                                </div>
+                                <!-- Blog -->
+                                <div class="btn-group">
+                                    <a class="p-2 nav-link" href="#">Blog</a>
+                                </div>
+                                <!-- Glossary -->
+                                <div class="btn-group">
+                                    <a class="p-2 nav-link last" href="#">Glossary</a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-3 wrapper wrapper-right">
+                        <div class="py-1">
+                            <nav id="right-nav" class="nav nav-right d-flex justify-content-end">
+                                <!-- Apply -->
+                                <div class="btn-group">
+                                    <a class="p-2 nav-link" href="https://www.gatech.edu/admissions" target="_blank">Apply<i class="fas fa-chevron-right ml-2"></i></a>
+                                </div>
+                                <!-- Give -->
+                                <div class="btn-group">
+                                    <a class="p-2 nav-link" href="http://development.gatech.edu/" target="_blank">Give<i class="fas fa-chevron-right ml-2"></i></a>
+                                </div>
+                                <!-- Search -->
+                                <div class="btn-group last">
+                                    <a class="p-2 nav-link" role="button" tabindex="0" style="cursor: pointer;" data-toggle="modal" data-target="#search-modal">Search<i class="fas fa-search ml-2"></i></a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.persistent-nav -->
+        <!-- Banner -->
+        <div class="container-fluid banner">
+            <div class="row">
+                <div class="col">
+                    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center banner-image">
+                        <div class="col-md-7 p-lg-6 mx-auto my-5">
+                            <div class="font-weight-bold headline shadowed">Curious Custom Theme</div>
+                            <div class="shaded">
+                                <p class="lead font-weight-normal">Themed page imitating GT Curie theme with Bootstrap 5. (No JQuery)</p>
+                                <a class="btn btn-outline-light" href="https://github.com/cloudpurpose/curious-custom_b5">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.banner -->
+        <!-- Alerts area -->
+        <div class="container-fluid alerts-area">
+            <div class="container p-0">
+                <div class="row m-0">
+                    <div class="col pl-1 pr-1">
+                        <div class="alert alert-primary" role="alert">
+                        A simple primary alert—check it out!
+                        </div>
+                        <div class="alert alert-secondary" role="alert">
+                        A simple secondary alert—check it out!
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                        A simple success alert—check it out!
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                        A simple danger alert—check it out!
+                        </div>
+                        <div class="alert alert-warning" role="alert">
+                        A simple warning alert—check it out!
+                        </div>
+                        <div class="alert alert-info" role="alert">
+                        A simple info alert—check it out!
+                        </div>
+                        <div class="alert alert-light" role="alert">
+                        A simple light alert—check it out!
+                        </div>
+                        <div class="alert alert-dark" role="alert">
+                        A simple dark alert—check it out!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.alerts-area -->
+        <!-- Spotlight area -->
+        <div class="container-fluid spotlight-area">
+            <div class="container">
+                <div class="row">
+                    <aside class="spotlight-artice">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <span class="badge badge-primary">Featured</span>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-12">
+                                    <div class="spotlight-header">Spotlight Area</div>
+                                </div>
+                                <div class="w-100"></div>
+                                <div class="col-md-6">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In metus dui, pharetra vel luctus eget, pellentesque auctor lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec porttitor sem eget enim posuere, eu venenatis metus euismod.</p>
+                                    <p><a class="btn btn-secondary" href="#">Learn more</a></p>
+                                </div>
+                                <div class="w-100 d-sm-none mb-5"></div>
+                                <div class="col-md-6">
+                                    <figure class="figure">
+                                        <img src="https://registrar.gatech.edu/files/students_1920x400.png" class="figure-img img-fluid rounded" alt="Current Students" loading="lazy">
+                                        <figcaption class="figure-caption text-right">A scene of students on campus.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <!-- /.spotlight-area -->
     </header>
-    <!-- MAIN -->
-    <main role="main" class="main-container container">
+    <!-- /header -->
+    <!-- Main -->
+    <main role="main" class="container">
         <div class="row">
-            <!-- BREADCRUMBS -->
-            <div id="breadcrumb" class="col-sm-12">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="https://www.gatech.edu">GT Home</a>
-                    </li>
-                    <li class="breadcrumb-item">
-                        <a href="https://em.gatech.edu">Enrollment Management</a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">Lorem Ipsum</li>
-                </ol>
+            <!-- Primary Area -->
+            <div class="col-md-8 col-xl-9 primary-area">
+                <nav aria-label="breadcrumb" class="mb-5">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+                <section class="content-area">
+                    <article>
+                        <h1 class="pb-4 mb-4 page-title border-bottom">Page Title</h1>
+                        <h2 class="page-subtitle">Page Subtitle</h2>
+                        <div class="page-meta">
+                            <p class="page-byline">
+                                <span class="page-submitted">Submitted January 1, 2014</span>&nbsp;<span class="page-author">by Mark</span>.
+                            </p>
+                        </div>
+                        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+                        <hr>
+                        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                        <blockquote>
+                        <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                        </blockquote>
+                        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                        <h3>Sub-heading</h3>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                        <pre><code>Example code block</code></pre>
+                        <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+                        <h3>Sub-heading</h3>
+                        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                        <ul>
+                            <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+                            <li>Donec id elit non mi porta gravida at eget metus.</li>
+                            <li>Nulla vitae elit libero, a pharetra augue.</li>
+                        </ul>
+                        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+                        </p>
+                        <ol>
+                            <li>Vestibulum id ligula porta felis euismod semper.</li>
+                            <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+                            <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+                        </ol>
+                        <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
+                    </article>
+                    <article>
+                        <h2 class="page-subtitle"><a href="a">Page Subtitle</a></h2>
+                        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
+                        <hr>
+                        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+                    </article>
+                    <article>
+                        <h2 class="page-subtitle">Buttons</h2>
+                        <p>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-light">Light</button>
+                            <button type="button" class="btn btn-dark">Dark</button>
+                            <button type="button" class="btn btn-link">Link</button>
+                        </p>
+                    </article>
+                    <article>
+                        <h2 class="page-subtitle">Buttons, Outlined </h2>
+                        <p>
+                            <button type="button" class="btn btn-outline-primary">Primary</button>
+                            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                            <button type="button" class="btn btn-outline-success">Success</button>
+                            <button type="button" class="btn btn-outline-danger">Danger</button>
+                            <button type="button" class="btn btn-outline-warning">Warning</button>
+                            <button type="button" class="btn btn-outline-info">Info</button>
+                            <button type="button" class="btn btn-outline-light">Light</button>
+                            <button type="button" class="btn btn-outline-dark">Dark</button>
+                            <button type="button" class="btn btn-outline-link">Link</button>
+                        </p>
+                    </article>
+                    <article>
+                        <h2 class="page-subtitle">Cards</h2>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Card link</a>
+                                        <a href="#" class="card-link">Another link</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="card-link">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Featured
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Special title treatment</h5>
+                                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="card">
+                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="#" class="btn btn-link p-0">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <h2 class="page-subtitle">Tables</h2>
+                        <div class="mb-5">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="mb-5">
+                            <table class="table table-sm table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                        <div class="mb-5">
+                            <table class="table table-sm table-bordered table-striped">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">First</th>
+                                    <th scope="col">Last</th>
+                                    <th scope="col">Handle</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">2</th>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">3</th>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                        </div>
+                    </article>
+                </section>
+                <!-- /.content-area -->
+                <nav class="page-pagination">
+                    <a class="btn btn-outline-primary" href="#">Older</a>
+                    <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
+                </nav>
             </div>
-            <!-- MAIN CONTENT SECTION -->
-            <div id="content" class="col-12" role="main">
-
-                <h1 class="page-title">Lorem Ipsum</h1>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dapibus velit ut rhoncus feugiat. Curabitur dignissim et arcu ut cursus. Sed non libero convallis ex fermentum imperdiet. Maecenas at eros maximus, porttitor ex at, dignissim mi. Donec aliquam scelerisque erat ut gravida. Vestibulum vel mauris nec est laoreet elementum. Mauris et cursus nunc. Nulla ultricies nisl ac tortor tincidunt volutpat. Pellentesque a semper velit, in fringilla ex. Sed elementum dapibus sapien, a tincidunt elit sodales a. Nullam laoreet rutrum est, at elementum mi condimentum et. Nulla vitae felis eu ex auctor congue nec vitae arcu.</p>
-
-                <p></p>Ut sed diam eget ipsum feugiat vulputate eu at purus. Sed finibus tincidunt augue ut convallis. Phasellus aliquet dui ut turpis tempor, nec accumsan dolor euismod. Nunc vel pulvinar tortor, at maximus metus. Curabitur porttitor et risus vitae bibendum. Donec et felis venenatis, iaculis massa et, fermentum ante. In mollis sapien id diam finibus elementum. Suspendisse posuere risus non sapien consectetur, sit amet rutrum erat maximus. Donec nisl urna, mollis faucibus feugiat eu, bibendum vitae mauris. Duis sed viverra nunc, sed placerat lorem.</p>
-                
-                <p></p>Duis congue, ex sed feugiat vestibulum, dui leo vulputate odio, id tempor lectus ex malesuada libero. Sed tempus nibh nec lorem malesuada tempor. Maecenas pretium vitae justo sed consectetur. Etiam urna ante, gravida at orci in, commodo posuere felis. Cras sit amet ex mi. Aliquam massa nisl, mattis ac semper sit amet, interdum vel nulla. Nam elementum nisi justo, sit amet pretium velit efficitur nec. Nunc et mauris tortor.</p>
-                
-                <p></p>Maecenas viverra maximus arcu in scelerisque. Duis nec sapien ut quam elementum mattis a eget lectus. Curabitur faucibus ex eros, a suscipit enim consequat sit amet. Fusce sagittis, eros elementum faucibus faucibus, erat velit pharetra nisl, nec varius ligula nibh quis neque. Nulla massa lorem, finibus interdum sapien at, vulputate egestas tellus. Vestibulum fringilla eros a velit hendrerit dictum. Maecenas vitae ullamcorper diam. Phasellus ut purus ornare elit convallis porta. Nunc gravida massa felis, a imperdiet turpis placerat eget. Morbi non orci sem. Etiam congue sodales massa vitae ullamcorper. Donec molestie lectus pharetra neque luctus, non convallis augue elementum.</p>
-                
-                <p></p>In eget tincidunt nisi. Pellentesque dictum ex in facilisis rhoncus. Praesent sem enim, lacinia at ullamcorper eget, congue ullamcorper sem. Quisque tincidunt orci eu dui convallis, eu volutpat mauris fringilla. Suspendisse potenti. Nullam at magna leo. Nam velit erat, venenatis non massa non, eleifend pharetra massa. Aenean bibendum sollicitudin dolor, at volutpat metus aliquam quis. Sed placerat consectetur velit vel ornare.</p>
-
-            </div>
+            <!-- /.primary-area -->
+            <!-- Secondary Area -->
+            <aside class="col-md-4 col-xl-3 secondary-area" role="complementary">
+                <div class="sidebar-textblock">
+                    <h4>About</h4>
+                    <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+                </div>
+                <div class="sidebar-menu">
+                    <h4>Archives</h4>
+                    <ol class="list-unstyled">
+                        <li class="first"><a href="#">March 2014</a></li>
+                        <li><a href="#">February 2014</a></li>
+                        <li><a href="#">January 2014</a></li>
+                        <li><a href="#">December 2013</a></li>
+                        <li><a href="#">November 2013</a></li>
+                        <li><a href="#">October 2013</a></li>
+                        <li><a href="#">September 2013</a></li>
+                        <li><a href="#">August 2013</a></li>
+                        <li><a href="#">July 2013</a></li>
+                        <li><a href="#">June 2013</a></li>
+                        <li><a href="#">May 2013</a></li>
+                        <li class="last"><a href="#">April 2013</a></li>
+                    </ol>
+                </div>
+                <div class="sidebar-menu">
+                    <h4>Elsewhere</h4>
+                    <ol class="list-unstyled">
+                        <li class="first"><a href="#">GitHub</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li class="last"><a href="#">Facebook</a></li>
+                    </ol>
+                </div>
+            </aside>
+            <!-- /.secondary-area -->
         </div>
+        <!-- /.row -->
     </main>
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div id="footer-0" class="container-fluid">
-            <div id="footer-inner-0" class="container">
+    <!-- /.container -->
+    <footer>
+        <!-- Subfooter -->
+        <div class="container-fluid bg-dark text-white pt-3 pb-3 mt-5 subfooter">
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-12"></div>
+                    <div class="col">
+                        <h4>Georgia Tech Resources</h4>
+                        <p><a href="https://gatech.edu/offices-and-departments" target="_blank">Offices & Departments</a></p>
+                        <p><a href="http://news.gatech.edu/" target="_blank">News Center</a></p>
+                        <p><a href="https://gatech.edu/calendar" target="_blank">Campus Calendar</a></p>
+                        <p><a href="http://specialevents.gatech.edu/" target="_blank">Special Events</a></p>
+                        <p><a href="https://secure.ethicspoint.com/domain/media/en/gui/7508/index.html" target="_blank">EthicsPoint Hotline</a></p>
+                        <p><a href="http://greenbuzz.gatech.edu/" target="_blank">GreenBuzz</a></p>
+                        <p><a href="http://comm.gatech.edu/" target="_blank">Institute Communications</a></p>
+                        <h5>Visitor Resources</h5>
+                        <p><a href="http://admission.gatech.edu/visit" target="_blank">Campus Visits</a></p>
+                        <p><a href="http://admission.gatech.edu/visit/directions-and-parking" target="_blank">Directions to Campus</a></p>
+                        <p><a href="http://pts.gatech.edu/visitors/Pages/default.aspx" target="_blank">Visitor Parking Information</a></p>
+                        <p><a href="http://lawn.gatech.edu/gtvisitor" target="_blank">GTvisitor Wireless Network Information</a></p>
+                        <p><a href="https://pe.gatech.edu/global-learning-center" target="_blank">Georgia Tech Global Learning Center</a></p>
+                        <p><a href="http://gatechhotel.com/" target="_blank">Georgia Tech Hotel & Conference Center</a></p>
+                        <p><a href="https://gatech.bncollege.com/" target="_blank">Barnes & Noble at Georgia Tech</a></p>
+                        <p><a href="http://ferstcenter.gatech.edu/" target="_blank">Ferst Center for the Arts</a></p>
+                        <p><a href="http://paper.gatech.edu/" target="_blank">Robert C. Williams Paper Museum</a></p>
+                    </div>
+                    <div class="w-100 d-sm-none"></div>
+                    <div class="col">
+                        <h4>Colleges, Instructional Sites & Research</h4>
+                        <h5>Colleges</h5>
+                        <p><a href="https://cc.gatech.edu/" target="_blank">College of Computing</a></p>
+                        <p><a href="https://design.gatech.edu/" target="_blank">College of Design</a></p>
+                        <p><a href="https://coe.gatech.edu/" target="_blank">College of Engineering</a></p>
+                        <p><a href="https://cos.gatech.edu/" target="_blank">College of Sciences</a></p>
+                        <p><a href="https://iac.gatech.edu/" target="_blank">Ivan Allen College of Liberal Arts</a></p>
+                        <p><a href="https://scheller.gatech.edu/" target="_blank">Scheller College of Business</a></p>
+                        <h5>Instructional Sites</h5>
+                        <p><a href="http://lorraine.gatech.edu/" target="_blank">Georgia Tech-Lorraine</a></p>
+                        <p><a href="https://pe.gatech.edu/savannah-campus" target="_blank">Georgia Tech-Savannah</a></p>
+                        <p><a href="http://www.shenzhen.gatech.edu/" target="_blank">Georgia Tech-Shenzhen</a></p>
+                        <p><a href="https://pe.gatech.edu/georgia-tech-online" target="_blank">Georgia Tech Online</a></p>
+                        <p><a href="https://pe.gatech.edu/" target="_blank">Professional Education</a></p>
+                        <p><a href="https://esl.gatech.edu/" target="_blank">The Language Institute</a></p>
+                        <h5>Global Footprint</h5>
+                        <p><a href="http://global.gatech.edu/" target="_blank">Global Engagement</a></p>
+                        <h5>Research</h5>
+                        <p><a href="http://gtri.gatech.edu/" target="_blank">Georgia Tech Research Institute</a></p>
+                        <p><a href="http://research.gatech.edu/" target="_blank">Research at Georgia Tech</a></p>
+                        <p><a href="http://research.gatech.edu/meet-dr-chaouki-t-abdallah" target="_blank">Executive Vice President for Research</a></p>
+                    </div>
+                    <div class="w-100 d-md-none"></div>
+                    <div class="col">
+                        <h4>Student & Parent Resources</h4>
+                        <h5>Student Resources</h5>
+                        <p><a href="https://gatech.edu/admissions" target="_blank">Apply</a></p>
+                        <p><a href="https://buzzport.gatech.edu" target="_blank">BuzzPort</a></p>
+                        <p><a href="http://buzzcard.gatech.edu/" target="_blank">Buzzcard</a></p>
+                        <p><a href="http://career.gatech.edu/" target="_blank">Career Resources</a></p>
+                        <p><a href="http://commencement.gatech.edu/" target="_blank">Commencement</a></p>
+                        <p><a href="http://library.gatech.edu/" target="_blank">Library</a></p>
+                        <p><a href="https://studentlife.gatech.edu/" target="_blank">Student Life</a></p>
+                        <p><a href="https://gatech.edu/innovation-ecosystem/students" target="_blank">Student Entrepreneurship</a></p>
+                        <p><a href="http://oie.gatech.edu/study-abroad" target="_blank">Study Abroad</a></p>
+                        <p><a href="https://canvas.gatech.edu/" target="_blank">Canvas</a></p>
+                        <h5>Parent Resources</h5>
+                        <p><a href="http://parents.gatech.edu/" target="_blank">Parent and Family Programs</a></p>
+                        <p><a href="https://studentlife.gatech.edu/" target="_blank">Student Life</a></p>
+                        <p><a href="http://finaid.gatech.edu/" target="_blank">Scholarships & Financial Aid</a></p>
+                    </div>
+                    <div class="w-100 d-sm-none"></div>
+                    <div class="col">
+                        <h4>Employee, Alumni & Other Resources</h4>
+                        <h5>Employees</h5>
+                        <p><a href="http://af.gatech.edu/" target="_blank">Administration and Finance</a></p>
+                        <p><a href="http://advising.gatech.edu/" target="_blank">Advising & Teaching</a></p>
+                        <p><a href="http://faculty.gatech.edu/" target="_blank">Faculty Affairs</a></p>
+                        <p><a href="http://careers.gatech.edu/" target="_blank">Faculty Hiring</a></p>
+                        <p><a href="http://ohr.gatech.edu/" target="_blank">Human Resources</a></p>
+                        <p><a href="http://provost.gatech.edu/" target="_blank">Office of the Provost</a></p>
+                        <p><a href="http://techworks.gatech.edu/" target="_blank">TechWorks</a></p>
+                        <h5>Alumni</h5>
+                        <p><a href="http://gtalumni.org/" target="_blank">Alumni Association</a></p>
+                        <p><a href="http://gtalumni.org/career" target="_blank">Alumni Career Services</a></p>
+                        <p><a href="http://gtalumni.org/s/1481/alumni/index.aspx?sid=1481&gid=21&pgid=689" target="_blank">Giving Back to Tech</a></p>
+                        <h5>Outreach</h5>
+                        <p><a href="http://atdc.org/" target="_blank">Startup Companies</a></p>
+                        <p><a href="http://innovate.gatech.edu/" target="_blank">Economic Development</a></p>
+                        <p><a href="http://industry.gatech.edu/" target="_blank">Industry Engagement</a></p>
+                        <p><a href="http://gov.gatech.edu/" target="_blank">Government & Community Partners</a></p>
+                        <p><a href="https://pe.gatech.edu/" target="_blank">Professional Education</a></p>
+                    </div>
+                    <div class="w-100 d-md-none"></div>
+                    <div class="col">
+                        <div class="map">
+                            <a href="https://map.gatech.edu/?id=82#!ct/52970,51169,50938,50861,50682,50361" target="_blank">
+                            <img class="img-thumbnail" src="https://registrar-dev.gatech.edu/_includes/themes/dev/assets/img/pics/map.png" alt="Map" loading="lazy"></a>
+                        </div>
+                        <p class="mt-3">Georgia Institue of Technology<br/>
+                        North Avenue, Atlanta, GA 30332</p>
+                        <p>Phone: 404-894-2000</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="footer-2" class="container-fluid">
-        </div>
-        <div id="footer-3" class="container-fluid">
-            <div id="footer-inner-3" class="container">
-                <div class="row">
-                    <div class="col-sm-12 ctn-footer">
-                        <img class="float-left" src="images/creating_the_next_black.svg" alt="Creating the Next">
-                        <div class="clearfix"></div>
-                    </div>
+        <!-- /.subfooter -->
+        <!-- Accent Footer -->
+        <div class="container-fluid accent-footer">
+            <div class="row">
+                <div class="col">
+                    <p class="mb-0">&nbsp;</p>
                 </div>
+            </div>
+        </div>
+        <!-- /.accent-footer -->
+        <!-- Page Footer -->
+        <div class="container-fluid bg-secondary pt-3 pb-3 page-footer">
+            <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-3">
-                        <div id="address_text" class="pt-1">
-                            <p><strong>Georgia Institute of Technology</strong><br>
-                                North Avenue, Atlanta, GA 30332<br>
-                                404.894.2000</p>
-                        </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 pt-1">
+                        <img class="img-fluid p-0 mb-3" style="max-width: 220px;"
+                            src="https://registrar-dev.gatech.edu/_includes/themes/dev/assets/img/pics/creating_the_next_black.svg"
+                            alt="Creating the Next" loading="lazy">
+                        <address class="left-bordered">
+                            <strong>Georgia Institute of Technology</strong><br>
+                            North Avenue, Atlanta, GA 30332<br>
+                            404.894.2000
+                        </address>
                     </div>
-                    <div class="col-sm-12 col-md-3 pt-1">
-                        <ul>
-                            <li><a href="http://www.gatech.edu/emergency/" target="_blank">Emergency Information</a></li>
-                            <li><a href="http://www.gatech.edu/legal/" target="_blank">Legal &amp; Privacy Information</a></li>
-                            <li><a href="https://gbi.georgia.gov/documents/human-trafficking-notice" target="_blank">Human Trafficking Notice</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-12 col-md-3 pt-1">
-                        <ul>
-                            <li><a href="http://www.gatech.edu/accessibility/" target="_blank">Accessibility</a></li>
-                            <li><a href="http://www.gatech.edu/accountability/" target="_blank">Accountability</a></li>
-                            <li><a href="https://www.gatech.edu/accreditation/" target="_blank">Accreditation</a></li>
-                            <li><a href="http://www.careers.gatech.edu" target="_blank">Employment</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-12 col-md-3 p-0">
-                        <div class="d-block d-sm-none">
-                            <div class="spacer"></div>
-                        </div>
-                        <div id="copyright">
-                            <img src="images/gt-logo.svg" alt="Georgia Institute of Technology">
-                            <p class="p-1 float-right">© Georgia Institute of Technology</p>
-                            <div class="clearfix"></div>
+                    <div class="col-sm-12 col-md-8 col-lg-9 pt-1">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="left-bordered">
+                                    <p><a href="https://www.directory.gatech.edu/" target="_blank">Directory</a></p>
+                                    <p><a href="http://www.gatech.edu/emergency/" target="_blank">Emergency Information</a></p>
+                                    <p><a href="http://www.gatech.edu/legal/" target="_blank">Legal & Privacy Information</a></p>
+                                    <p><a href="https://gbi.georgia.gov/human-trafficking-notice" target="_blank">Human Trafficking Notice</a></p>
+                                    <p><a href="https://titleix.gatech.edu/" target="_blank">Title IX/Sexual Misconduct</a></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="left-bordered">
+                                    <p><a href="http://www.gatech.edu/accessibility/" target="_blank">Accessibility</a></p>
+                                    <p><a href="http://www.gatech.edu/accountability/" target="_blank">Accountablility</a></p>
+                                    <p><a href="https://www.gatech.edu/accreditation/" target="_blank">Accreditation</a></p>
+                                    <p><a href="http://www.careers.gatech.edu/" target="_blank">Employment</a></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-fluid float-right p-0 mb-3" style="max-width: 140px;" src="../_assets/img/logos/gt-logo.svg" alt="Creating the Next" loading="lazy">
+                                <p class="float-right copyr">&#169;&nbsp;Georgia Institute of Technology</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- /.page-footer -->
+        <!-- Back to Top -->
+        <div class="scroll-top is-hidden"><button onclick="scrollToTop()" class="scroll-btn"><i class="fas fa-angle-up fa-3x"></i></button></div>
+        <!-- /.back-to-top -->
     </footer>
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS Bundle CDN -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-    <!-- Custom JavaScript -->
-    <script src="js/script.js"></script>
+    <!-- /footer -->
+    <!-- Popper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <!-- Custom Vanilla JavaScript -->
+    <script src="../_assets/js/vanilla/scripts.js"></script>
+    <script src="../_assets/js/vanilla/scroll.js"></script>
+    <script src="../_assets/js/vanilla/hamburger.js"></script>
 </body>
+<!-- Search modal -->
+<div class="modal fade search-modal" id="search-modal" tabindex="-1" aria-labelledby="search-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="search-modal-label">Search Form</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="get" action="https://registrar-dev.gatech.edu/search">
+                    <div class="form-row mb-3">
+                        <div class="form-group col-12 mb-1">
+                            <label for="input-search">Input a search term.</label>
+                        </div>
+                        <div class="form-group col-md-8">
+                            <input type="text" class="form-control" id="input-search" name="s" placeholder="Search Term">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <button type="submit" class="btn btn-secondary btn-block" style="cursor: pointer;">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.modal -->
 </html>

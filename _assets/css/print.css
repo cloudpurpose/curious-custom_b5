@@ -1,0 +1,225 @@
+html,
+body,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    color: black;
+    margin: 0 0 32px 0;
+}
+a,
+a:link,
+a:visited,
+a:active {
+    color: blue;
+    text-decoration: underline;
+}
+.bg-light {
+    background-color: white !important;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 0;
+}
+.btn-primary,
+.btn-secondary,
+.btn-dark,
+.btn-light,
+.btn-link,
+.btn-success,
+.btn-danger,
+.btn-warning,
+.btn-info,
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-dark,
+.btn-outline-light,
+.btn-outline-link,
+.btn-outline-success,
+.btn-outline-danger,
+.btn-outline-warning,
+.btn-outline-info {
+    color: blue !important;
+    background-color: white !important;
+    border-color: blue !important;
+    text-decoration: none !important;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 0;
+}
+.alert-primary,
+.alert-secondary,
+.alert-success,
+.alert-danger,
+.alert-warning,
+.alert-info,
+.alert-light,
+.alert-dark {
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+/* Badges */
+.badge {
+    border-radius: 0;
+}
+.badge-primary,
+.badge-secondary,
+.badge-success,
+.badge-danger,
+.badge-warning,
+.badge-info,
+.badge-light,
+.badge-dark {
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+
+/* Topper */
+.topper {
+    display: none !important;
+}
+
+/* Full Header */
+.full-header {
+    display: none !important;
+}
+
+/* Mobile Header */
+.mobile-header {
+    display: none !important;
+}
+
+/* Persistent Nav, Not Mobile */
+.persistent-nav:not(.mobile) {
+    display: none !important;
+}
+
+/* Persistent Nav, Mobile */
+.persistent-nav.mobile {
+    display: none !important;
+}
+
+/* Banner */
+.banner {
+    display: none !important;
+}
+
+/* Alerts area */
+.alerts-area {
+    display: none !important;
+}
+
+/* Spotlight area */
+.spotlight-area {
+    display: none !important;
+}
+
+/* Subfooter */
+.subfooter {
+    display: none !important;
+}
+
+/* Accent Footer */
+.accent-footer {
+    display: none !important;
+}
+
+/* Page Footer */
+.page-footer {
+    display: none !important;
+}
+
+/* Primary Area */
+.primary-area {
+    display: block;
+    width: 100% !important;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: none !important;
+}
+
+/* Content area */
+.content-area {
+    display: block;
+    width: 100% !important;
+}
+.content-area article {
+    padding-bottom: 16px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid black;
+}
+.content-area h1,
+.content-area h2,
+.content-area h3,
+.content-area h4,
+.content-area h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.content-area .page-subtitle,
+.content-area .page-subtitle a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 24px;
+    text-decoration: none;
+}
+.content-area .page-meta,
+.content-area .page-meta p {
+    color: gray;
+}
+.content-area p {
+    margin-bottom: 24px;
+}
+.content-area .border-bottom {
+    border-bottom: 1px solid black !important;
+}
+.content-area hr {
+    border-top: 1px solid gray !important;
+}
+.content-area .card {
+    border: 1px solid gray !important;
+    border-radius: 0;
+}
+.content-area .card .card-header {
+    font-weight: bold;
+}
+.content-area .card .card-header,
+.content-area .card .card-footer {
+    background-color: white;
+}
+.content-area .card .card-body .card-title {
+    margin-bottom: 16px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.content-area blockquote {
+    border: 1px solid transparent;
+    padding: 16px;
+}
+
+/* Secondary Area */
+.secondary-area {
+    display: none !important;
+}
+
+/* Search modal */
+.search-modal {
+    display: none !important;
+}
